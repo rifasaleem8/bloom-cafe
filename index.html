@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Café | Coffee & Moments</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #faf8f2;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #faf8f2;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #355340;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 22px;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+            background:
+                linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 28px;
+            background: #d9b88f;
+            color: #243629;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            color: #355340;
+            margin-bottom: 20px;
+        }
+
+        .section-intro {
+            max-width: 650px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .menu-card h3 {
+            color: #355340;
+            padding: 18px 10px 8px;
+        }
+
+        .menu-card p {
+            padding: 0 20px 25px;
+            line-height: 1.6;
+        }
+
+        .story {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            text-align: left;
+            background: #e9e8dc;
+        }
+
+        .story img {
+            width: 48%;
+            border-radius: 15px;
+        }
+
+        .story-text {
+            flex: 1;
+        }
+
+        .story-text p {
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        .contact {
+            background: #355340;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        footer {
+            background: #243629;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .story {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .story img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Bloom Café</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#story">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Slow mornings. Good coffee.</h1>
+
+            <p>
+                A cozy little corner for beautiful coffee,
+                freshly baked treats and moments worth slowing down for.
+            </p>
+
+            <a href="#menu" class="button">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <h2>Made with love</h2>
+
+        <p class="section-intro">
+            From freshly brewed coffee to delightful desserts,
+            every little thing is made to make your day better.
+        </p>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+               <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Coffee">
+                <h3>Fresh Coffee</h3>
+                <p>Rich, comforting coffee brewed fresh for every cup.</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Bakery">
+                <h3>Freshly Baked</h3>
+                <p>Delicious pastries and treats to brighten your day.</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80" alt="Dessert">
+                <h3>Sweet Moments</h3>
+                <p>Little desserts made for life's sweetest moments.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section story" id="story">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80" alt="Coffee being prepared">
+
+        <div class="story-text">
+            <h2>More than just coffee</h2>
+
+            <p>
+                Bloom Café was imagined as a place where people
+                could pause, connect and enjoy the simple things.
+                A warm cup, good company and a space that feels
+                like home.
+            </p>
+
+            <p>
+                Every cup tells a little story. We would love
+                for yours to begin here.
+            </p>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2>Your next coffee awaits.</h2>
+
+        <p class="section-intro">
+            Come visit, unwind and let us make your day a little warmer.
+        </p>
+
+        <a href="mailto:hello@bloomcafe.example" class="button">
+            Contact Us
+        </a>
+    </section>
+
+    <footer>
+        <p>Bloom Café | A little coffee, a lot of love.</p>
+        <p>© 2026 Bloom Café</p>
+    </footer>
+
+</body>
+</html>
